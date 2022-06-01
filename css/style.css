@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+body{
+   
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    background: url(../images/pattern-background-desktop.svg)no-repeat,hsl(225, 100%, 98%);
+    background-size: 100%;
+}
+.order-summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 450px;
+    height: 620px;
+    background-color: #ffffff;
+    box-shadow: 0 0 0.5em;
+    border-radius: 20px;
+}
+.image img {
+    border-radius: 20px 20px 0 0;
+}
+.order-info{
+    padding: 40px;
+}
+.heading h1{
+
+    font-weight: 900;
+    text-align: center;
+    color: #1e3253;
+    margin: 6px;
+}
+.copy p {
+
+    font-weight: 500;
+    text-align: center;
+    font-size: 16px;
+    padding: 0 12px 0 12px;
+    margin:0;
+    color :#9094a0;  
+}
+.plan-info{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 20px;
+    
+}
+.plan-heading {
+    flex: 5;
+    padding: 0 0 0 12px;
+    margin: 0;
+}
+.plan-heading p {
+    margin: 0;
+   
+}
+p.sub-heading {
+    font-weight: 900;
+
+}
+p.price{
+    color :#9094a0; 
+}
+.plan-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(245, 75%, 52%);
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    margin-left: 42px;
+    border-radius: 10px;
+    font-weight: 900;
+}
+.plan-cta a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.plan-link a {
+ color: hsl(245, 75%, 52%);
+ font-size: 500;
+}
+.plan-cta-cancel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+.plan-cta-cancel a {
+    text-decoration: none;
+    color:#9094a0; 
+    font-weight: 900;
+}
