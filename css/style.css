@@ -1,96 +1,135 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 body{
-   
+    min-height: 100vh;
     font-size: 16px;
-    font-family: 'Red Hat Display', sans-serif;
-    background: url(../images/pattern-background-desktop.svg)no-repeat,hsl(225, 100%, 98%);
-    background-size: 100%;
-}
-.order-summary {
+    font-family: 'Red Hat Display', sans-serif;   background: url(../images/pattern-background-mobile.svg)no-repeat,hsl(225, 100%, 94%);
+    background-size: cover;
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-.container{
-    width: 450px;
-    height: 620px;
-    background-color: #ffffff;
-    box-shadow: 0 0 0.5em;
-    border-radius: 20px;
+    justify-content: center;
 }
 .image img {
-    border-radius: 20px 20px 0 0;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
 }
-.order-info{
-    padding: 40px;
+.container {
+    width: 330px;
+    height: 581px;
+    background: #fff;
+    border-radius: 30px;
 }
-.heading h1{
-
-    font-weight: 900;
+h1 {
+    margin: 0;
     text-align: center;
-    color: #1e3253;
-    margin: 6px;
+    padding-top: 20px;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 26px;
+}
+p {
+    margin: 0;
 }
 .copy p {
-
-    font-weight: 500;
     text-align: center;
-    font-size: 16px;
-    padding: 0 12px 0 12px;
-    margin:0;
-    color :#9094a0;  
+    padding: 20px 28px 51px; 
+    font-weight: 700;
+    line-height: 28px;
+    color: hsl(223, 8%, 44%);
 }
-.plan-info{
+.plan-info {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    
-}
-.plan-heading {
-    flex: 5;
-    padding: 0 0 0 12px;
-    margin: 0;
-}
-.plan-heading p {
-    margin: 0;
-   
+    padding: 0 20px;
 }
 p.sub-heading {
     font-weight: 900;
-
+    margin-bottom: 7px;
 }
 p.price{
-    color :#9094a0; 
-}
-.plan-cta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: hsl(245, 75%, 52%);
-    text-align: center;
-    width: 300px;
-    height: 40px;
-    margin-left: 42px;
-    border-radius: 10px;
-    font-weight: 900;
-}
-.plan-cta a {
-    color: #ffffff;
-    text-decoration: none;
+    color: hsl(223, 8%, 44%);
+    font-weight: 700;
 }
 .plan-link a {
- color: hsl(245, 75%, 52%);
- font-size: 500;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
 }
-.plan-cta-cancel{
+.cta {
+    text-align: center;
+    margin-top: 33px;
+}
+.plan-cta {
+    background: hsl(245, 75%, 52%);
+    width: 281px;
+    height: 49px;
+    margin: auto;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding-top: 40px;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 5px 12px 36px hsl(224, 23%, 55%);
+}
+.plan-cta a {
+    text-align: justify;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+.plan-cta-cancel {
+    margin-top: 17px;
 }
 .plan-cta-cancel a {
     text-decoration: none;
-    color:#9094a0; 
     font-weight: 900;
+    color: hsl(224, 23%, 55%);
+}
+/* deskop */
+@media screen and (max-width: 1360px) {
+    .container {
+        width: 330px;
+        height: 505px;
+    }
+    .plan-cta {
+        width: 291px;
+    
+    }
+    .copy p {
+        padding: 19px 19px 22px;
+        line-height: 26px;
+        font-weight: 700;
+    }
+    .cta {
+        margin-top: 11px;
+    }
+    
+.plan-cta-cancel {
+    margin-top: 8px;
+}
+}
+/* large screens */
+@media screen and (min-width: 1400px) {
+    body{
+        min-height: 100vh;
+        font-size: 16px;
+        font-family: 'Red Hat Display', sans-serif;   background: url(../images/pattern-background-desktop.svg)no-repeat,hsl(225, 100%, 94%);
+        background-size: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        width: 454px;
+        height: 710px;
+    }
+    .copy p {
+        padding: 20px 38px 52px;
+        font-size: 19px;
+    }
+    .plan-info {
+        padding: 0 51px;
+    }
+    .plan-cta {
+        width: 357px;
+    }
 }
