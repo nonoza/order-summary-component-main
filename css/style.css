@@ -99,28 +99,7 @@ p.price{
     padding-left: 11px;
 }
 /* deskop */
-@media screen and (min-width: 1360px) {
-    .container {
-        width: 384px;
-        height: 552px;
-    }
-    .plan-cta {
-        width: 291px;
-    
-    }
-    .copy p {
-        padding: 19px 20px 33px;
-        line-height: 22x;
-        font-weight: 500;
-    }
-    .cta {
-        margin-top: 16px;
-    }
-    
-.plan-cta-cancel {
-    margin-top: 25px;
-}
-}
+
 /* large screens */
 @media screen and (min-width: 1400px) {
     body{
